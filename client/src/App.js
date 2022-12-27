@@ -1,17 +1,45 @@
 import {
   createBrowserRouter,
   RouterProvider,
+  Outlet,
+
 } from "react-router-dom";
 import Home from "./pages/Home"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
 import Menu from "./pages/Menu"
 import Single from "./pages/Single"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+
+const Layout = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>This is home page</div>,
+    element: <Layout/>,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/single",
+        element:<Single/>
+      },
+      {
+        path:"/menu",
+        element:<Menu/>
+      },
+    ]
   },
   {
     path: "/home",
@@ -37,8 +65,10 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-      <div>
-        <RouterProvider router={router} />
+      <div className="app">
+        <div className="container">        
+          <RouterProvider router={router} />
+        </div>
       </div>
     );
   }
