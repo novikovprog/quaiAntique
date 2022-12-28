@@ -1,10 +1,15 @@
 $darkGrey : #0B1315;
-
+$coffee : #906427;
 
 .app{
-
+    display: flex;
+    justify-content: center;
     .container{
-
+        width: 1024px;
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
         //LOGIN & REGISTER
         .auth{
             display: flex;
@@ -56,6 +61,55 @@ $darkGrey : #0B1315;
         }
 
 
+    }
+
+    .navbar{
+        .container{
+            padding: 10px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo{
+                img{
+                    width: 250px;
+                }
+            }
+
+            .links{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                h6{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+
+                span{
+                    cursor: pointer;
+                }
+
+                .write{
+                    background-color: #b6ac97;
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 300;
+
+                    &:hover{
+                        width: 53px;
+                        height: 53px;
+                        color: #b6ac97;
+                        background-color: #fff;
+                        border: 1px solid #b6ac97;
+                    }
+                }
+            }
+        }
     }
 
 

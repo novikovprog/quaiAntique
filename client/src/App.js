@@ -10,6 +10,7 @@ import Menu from "./pages/Menu"
 import Single from "./pages/Single"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import Write from "./pages/Write"
 import "./style.scss"
 
 const Layout = () => {
@@ -60,7 +61,11 @@ const router = createBrowserRouter([
   {
     path: "/single",
     element: <Single/>,
-  },  
+  },
+  {
+    path: "/write",
+    element: <Write/>,
+  },   
 ]);
 
 function App() {
