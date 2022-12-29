@@ -91,26 +91,40 @@ $coffee : #906427;
                 }
 
                 .write{
-                    background-color: #b6ac97;
-                    width: 55px;
-                    height: 55px;
-                    border-radius: 50%;
+                    color: white;
+                    background-color: $coffee;
+                    width: 65px;
+                    height: 35px;
+                    border-radius: 10%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     font-weight: 300;
 
                     &:hover{
-                        width: 53px;
-                        height: 53px;
-                        color: #b6ac97;
+                        width: 63px;
+                        height: 33px;
+                        color: $coffee;
                         background-color: #fff;
                         border: 1px solid #b6ac97;
                     }
-                }
+                    
+                }                
             }
         }
     }
 
+    footer{
+        margin-top: 100px;
+        padding: 20px;
+        background-color: #b6ac97;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            height: 40px;
+            font-size: 12px;
+        }
+    }
 
 }
