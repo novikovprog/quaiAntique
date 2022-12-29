@@ -22,7 +22,7 @@ $coffee : #906427;
 
         h1{
             font-size: 20px;
-            color: azure;
+            color: black;
             margin-bottom: 20px;
         }
 
@@ -51,7 +51,7 @@ $coffee : #906427;
 
         p{
             font-size: 12px;
-            color: red;
+            color: black;
             text-align: center;
         }
 
@@ -124,6 +124,40 @@ $coffee : #906427;
         img{
             height: 40px;
             font-size: 12px;
+        }
+    }
+
+    //HOME
+
+    .home{
+
+        .posts{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+
+            .post{
+                display: flex;
+
+                .img{
+                    flex: 2;
+
+                    img{
+                        position: relative;
+                        width: 100%;
+                        max-height: 400px;
+                        object-fit: cover;
+                    }
+                }
+
+                .content{
+                    flex: 3;
+                    position: relative;
+                    right: 350px;
+                    top: 250px;
+                }
+            }
         }
     }
 

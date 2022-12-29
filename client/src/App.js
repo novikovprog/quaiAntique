@@ -13,10 +13,11 @@ import Footer from "./components/Footer"
 import Write from "./pages/Write"
 import "./style.scss"
 
+
 const Layout = () => {
   return (
     <>
-      <Navbar />
+      <Navbar />      
       <Outlet />
       <Footer />
     </>
